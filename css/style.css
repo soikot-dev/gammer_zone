@@ -1,0 +1,421 @@
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700&family=Work+Sans:wght@400;500;600;700;800&display=swap');
+/* Shared styles */
+*{
+    font-family: 'Work Sans', sans-serif;
+}
+*{
+    padding: 0;
+    margin: 0 auto;
+}
+body{
+    max-width: 1340px;
+}
+/* Header style Start */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    
+}
+
+.logo .logo-title{
+    text-align: center;
+    font-size: 45px;
+    font-weight: 700;
+
+}
+.logo-span{
+    color: #F948B2;
+}
+
+.logo>img{
+    height: 30px;
+    margin-right: .5rem;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    
+}
+.navbar li{
+    list-style: none;
+    padding: .5rem 1.5rem;
+}
+.navbar li a{
+    text-decoration: none;
+    color: #3C354F;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+
+}
+.navbar li:last-child{
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+    justify-content: center;
+    background: rgba(11, 2, 35, 0.10);
+    border-radius: .5rem;
+    gap: 20px;
+}
+.navbar :last-child>img{
+    width: 30px;
+
+}
+/* Banner Style */
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 130px;
+}
+.banner-title{
+    color: #0B0223;
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.banner-title-text{
+    font-size: 4rem;
+    font-weight: 800;;
+    text-transform: uppercase;
+    color:#F948B2;
+}
+
+.banner-content-detail{
+    list-style: none;
+    color: #534C64;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: .5rem;
+    padding-bottom: 20px;
+}
+.signin-btn{
+    background: #F948B2;
+    padding: 1rem 2rem;
+    border-radius:48px ;
+    border: 0;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-right: 20px;
+}
+.rouge-btn{
+    background: #4EC5F7;
+    padding: 1rem 2rem;
+    border-radius:48px ;
+    border: 0;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* Header style End */
+
+/* Online game section style start */
+
+.online-game-content{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.online-game-title{
+    color: #0B0223;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.online-game-title span{
+    color: #F948B2;
+}
+.onlin-game-description{
+    color: #534C64;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.online-game-wrap{
+    margin-top: 3rem;
+    display: flex;
+    gap: 1rem;
+    margin: 0 130px;
+}
+.games-card{
+    width: 100%;
+    position: relative;
+}
+.overlay{
+    width: 100%;
+    height: 88%;
+    border: 2px solid #F948B2;
+    border-radius: .5rem;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    
+}
+.overlay:hover{
+    opacity: 1;
+}
+.overlay>img{
+    width: 3rem;
+    
+}
+.games-card>img{
+    width: 100%;
+    display: block;
+    margin: auto;
+    
+}
+/* Online game section style end */
+
+/* Paly instant section style start */
+
+.play-instant-wrap{
+    display: flex;
+    align-items: center;
+    margin: 50px 130px;
+    margin-bottom: 0;
+}
+.play-content{
+    margin-right: 8rem;
+    margin-bottom: 15rem;
+}
+.play-instant-title{
+    text-align: right;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px; 
+}
+.play-instant-color{
+   color: #F948B2;
+}
+.play-instant-description{
+    color: #534C64;
+    text-align: right;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+}
+.play-instant-img-bottom {
+    position: relative;
+    top: -260px;
+    right: 80px;
+}
+.play-images{
+    width: 800px;
+}
+
+/* Paly instant section style end */
+
+/* Game Name section style start */
+
+.games-name{
+    margin: 0 130px;
+    margin-top: -200px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2rem; 
+}
+
+.games-item{
+    display: flex;
+    align-items: center;
+    
+}
+.games-item:hover{
+    border: .5px solid #F948B2;
+    color: white;
+    border-radius: 48px;
+    padding: .5rem 1rem;
+  
+}
+.games-title{
+    color: #0B0223;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+/* Game Name section style end */
+
+/* Footer section styles start*/
+.footer{
+    background: #0B0223;
+    color: white;
+    text-align: center;
+    padding: 30px 30px 40px 30px;
+    margin-top: 100px;
+}
+.footer-title{
+    margin-left:0;
+    font-size: 45px;
+    font-weight: 700;
+}
+.f-summary{
+    display: flex;
+    margin: 1rem 10rem;
+    margin-bottom: 3rem;
+
+}
+.f-i-con{
+    width: 1.5rem;
+    margin: .5rem;
+    padding: .5rem .5rem;
+    background-color: white;
+    border-radius: 50px;
+}
+.footer-icons{
+    width: 500px;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+}
+.f-terms{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 1rem 14rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+.copyright{
+    color: rgba(255, 255, 255, 0.60);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+        }
+/* Footer section styles end*/
+
+
+/* responsive style start */
+/* Mobile Device */
+@media screen and (max-width:576px) {
+   .play-instant-wrap,.online-game-wrap,.navbar,nav{
+        flex-direction: column;
+    }
+    .banner{
+        flex-direction: column-reverse;
+    }
+    .banner-content
+    {
+        text-align: center;
+    }
+    .banner-button{
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+    }
+    .banner-img{
+        width: 100%;
+    }
+  .banner,.f-terms,.f-summary,.games-name,.play-instant-wrap,.online-game-wrap{
+        margin: 20px;
+    }
+    .overlay{
+        height: 97%;
+    }
+    .play-instant-title,.play-instant-description{
+        text-align: center;
+    }
+    .play-content{
+        margin-right: 0;
+        margin-bottom: 2rem;
+    }
+    .play-instantimg-top{
+        width: 100%;
+    }
+    .play-instant-img-bottom {
+        top: -160px;
+        right: 23px;
+        width: 50%;
+    }
+    .games-name{
+        grid-template-columns: repeat(3,1fr);
+        margin-top: -175px;
+        gap:.5rem;
+    }
+    .games-item:hover{
+        border: .5px solid #F948B2;
+        border-radius: 48px;
+        padding: .2rem .5rem;
+      
+    }
+    .games-item>img{
+        width: 35px;
+    }
+    .games-title{
+        color: #0B0223;
+        font-size: .5rem;
+        font-weight: 500;
+    }
+    .f-summary{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .f-terms{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .footer-icons{
+        grid-template-columns: repeat(3,1fr);
+        width: 100%;
+    }
+
+}
+/* Tablet Device */
+@media screen and (min-width:577px) and (max-width:960px) {
+    .play-instant-wrap,nav{
+        flex-direction: column;
+    }
+    .banner{
+        flex-direction: column-reverse;
+        gap: 50px;
+    }
+    .banner-image{
+        width: 100%;
+    }
+    .footer-section,.banner,.f-terms,.f-summary,.games-name,.online-game-wrap{
+        margin: 20px;
+    }
+    .overlay{
+        height: 76%;
+    }
+    .play-content{
+        margin-right: 0;
+        margin-bottom: 2rem;
+    }
+    .play-instant-title,.play-instant-description{
+        text-align: center;
+    }
+    .play-instantimg-top{
+        width: 100%;
+    }
+    .play-instant-img-bottom{
+        width: 50%;
+        bottom: 150px;
+      }
+      .games-name{
+        grid-template-columns: repeat(3,1fr);
+        margin-top: -200px;
+        gap:.5rem;
+    }
+    .f-summary{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .f-terms{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
